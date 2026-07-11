@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+interface IClaimTopicsRegistry {
+    function addClaimTopic(uint256 _claimTopic) external;
+    function removeClaimTopic(uint256 _claimTopic) external;
+    function getClaimTopics() external view returns (uint256[] memory);
+}
